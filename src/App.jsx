@@ -14,7 +14,7 @@ function App() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    socket = io("http://localhost:4000");
+    socket = io("https://osuka-chatt-api.herokuapp.com");
 
     socket.on("connect", () => {
       console.log("Connected");
