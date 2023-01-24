@@ -14,7 +14,7 @@ function App() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    socket = io("chatt-backup-backend-production.up.railway.app:4000");
+    socket = io("https://chatt-backup-backend-production.up.railway.app");
 
     socket.on("connect", () => {
       console.log("Connected");
